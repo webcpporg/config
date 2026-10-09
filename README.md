@@ -53,7 +53,8 @@ node itself. A b2 project uses config through `/webcpp/config//config`.
 ## Documentation
 
 config's page, with its API reference, is published at
-<https://webcpporg.github.io/webcpp/libs/config/>.
+<https://webcpporg.github.io/webcpp/libs/config/>; `b2 libs/config/doc`
+builds it into `doc/html/index.html`.
 
 ## License
 
