@@ -28,3 +28,5 @@ include::testing.adoc[]
 The macros of `<webcpp/config.hpp>` and `<webcpp/version.hpp>`.
 
 include::{reference}[leveloffset=+1]
+
+include::changelog.adoc[]
