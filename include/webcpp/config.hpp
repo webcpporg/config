@@ -19,7 +19,7 @@
 /**
  Defined when the program is built for wasm32-wasip2, as a component of WASI 0.2.
 
- The compiler says so with `__wasip2__`, which wasi-sdk's clang defines for the target
+ The compiler says so with `\__wasip2__`, which wasi-sdk's clang defines for the target
  `wasm32-wasip2`.
 
  @see "Targets", in the guide.
@@ -29,7 +29,7 @@
 /**
  Defined when the program is built for wasm32-wasip3, as a component of WASI 0.3.
 
- The compiler says so with `__wasip3__`, which wasi-sdk's clang defines for the target
+ The compiler says so with `\__wasip3__`, which wasi-sdk's clang defines for the target
  `wasm32-wasip3`.
 
  @see "Targets", in the guide.
@@ -39,7 +39,7 @@
 /**
  Defined when the program is built with Emscripten, for a browser or for node.
 
- The compiler says so with `__EMSCRIPTEN__`.
+ The compiler says so with `\__EMSCRIPTEN__`.
 
  @see "Targets", in the guide.
 */

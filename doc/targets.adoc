@@ -35,7 +35,7 @@ itself defines for that target:
 The macros come from the compiler, never from the build system: a program
 compiled by hand, with a plain `clang++` or with wasi-sdk's, gets the macro
 b2 would give it. The program of <<config-introduction>> chooses by them,
-when it is compiled, where its output goes:
+when it is compiled, the name of where its standard output goes:
 
 [source]
 ----
