@@ -25,8 +25,9 @@ it has Boost.Config's macros and webcpp's version too.
 config is macros only, as Boost.Config is: it declares no namespace, no type
 and no function, and needs Boost's headers and nothing to build or link. Its
 macros are the collection's, `WEBCPP_*`, where every other library's are
-`WEBCPP_<LIBRARY>_*`, and so no library is named `target`, `has`, `no`,
-`lib` or `version`, whose macros would meet config's.
+`WEBCPP_<LIBRARY>_*`, and so no library's name is `target`, `has`, `no`,
+`lib`, `version` or `test`, alone or followed by an underscore and more
+(`has_x`): its macros would meet config's, or the tests' `WEBCPP_TEST_*`.
 
 A library builds its own configuration on it. The program below holds the
 configuration of a library of its own, my_library, in a few lines: its macro
