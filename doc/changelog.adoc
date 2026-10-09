@@ -16,4 +16,5 @@ of every version are on webcpp's index page.
 === Unreleased
 
 // tag::unreleased[]
+* Added the library, with webcpp's target, exceptions and version macros.
 // end::unreleased[]
