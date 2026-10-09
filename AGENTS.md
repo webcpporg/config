@@ -1,7 +1,8 @@
 # Working on config
 
-Read [webcpp's AGENTS.md](../../AGENTS.md) first; this file holds only what is
-config's own.
+Read [webcpp's AGENTS.md](../../AGENTS.md)
+(<https://github.com/webcpporg/webcpp/blob/main/AGENTS.md>) first; this file
+holds only what is config's own.
 
 - **Macros only.** config declares no namespace; its macros are the
   collection's, `WEBCPP_*`, as Boost.Config's are `BOOST_*`, and its include

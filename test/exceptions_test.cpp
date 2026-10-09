@@ -27,6 +27,8 @@
 #if (defined(__cpp_exceptions) || defined(_CPPUNWIND)) && defined(BOOST_NO_EXCEPTIONS)
 #error "WEBCPP_NO_EXCEPTIONS turned Boost's exceptions off too"
 #endif
+#elif defined(WEBCPP_NO_EXCEPTIONS)
+#error "config.hpp defines WEBCPP_NO_EXCEPTIONS, which is the developer's alone"
 #elif defined(BOOST_NO_EXCEPTIONS) == defined(WEBCPP_HAS_EXCEPTIONS)
 #error "WEBCPP_HAS_EXCEPTIONS is not defined exactly when the build has exceptions"
 #endif

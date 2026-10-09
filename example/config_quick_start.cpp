@@ -12,8 +12,6 @@
 #include <cstdio>
 #include <string_view>
 
-namespace {
-
 // tag::library-config[]
 // my_library's own macro: defined when webcpp has no exceptions (the compiler has none, or the
 // developer defined WEBCPP_NO_EXCEPTIONS), or when the developer defines it alone.
@@ -21,6 +19,8 @@ namespace {
 #define MY_LIBRARY_NO_EXCEPTIONS
 #endif
 // end::library-config[]
+
+namespace {
 
 // tag::target[]
 // Where the program's standard output goes, chosen when it is compiled.

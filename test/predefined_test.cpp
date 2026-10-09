@@ -5,7 +5,7 @@
 // https://www.boost.org/LICENSE_1_0.txt)
 
 // A WEBCPP_TARGET_* macro or WEBCPP_HAS_EXCEPTIONS defined before <webcpp/config.hpp>, which
-// test/Jamfile defines on the command line, stops the build with config.hpp's message.
+// test/Jamfile defines on the command line, stops the build with config.hpp's message alone.
 
 // expected-error@webcpp/config.hpp:* {{are defined by <webcpp/config.hpp> alone}}
 #include <webcpp/config.hpp>

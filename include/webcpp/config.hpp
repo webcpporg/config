@@ -59,11 +59,13 @@
 #undef WEBCPP_NO_EXCEPTIONS
 #endif
 
+// A build that defines a target macro or WEBCPP_HAS_EXCEPTIONS before this header stops at this
+// message alone: the rest of the header is the #else, which defines none of them a second time.
 #if defined(WEBCPP_TARGET_NATIVE) || defined(WEBCPP_TARGET_WASIP2) ||     \
     defined(WEBCPP_TARGET_WASIP3) || defined(WEBCPP_TARGET_EMSCRIPTEN) || \
     defined(WEBCPP_HAS_EXCEPTIONS)
 #error "WEBCPP_TARGET_* and WEBCPP_HAS_EXCEPTIONS are defined by <webcpp/config.hpp> alone"
-#endif
+#else
 
 // The target, from the compiler's own macros alone, before Boost.Config: a WebAssembly target
 // without a C++ library, wasm32-unknown-unknown, stops inside <boost/config.hpp>, and is named
@@ -102,5 +104,6 @@
 */
 #define WEBCPP_HAS_EXCEPTIONS
 #endif
+#endif  // a WEBCPP_TARGET_* macro or WEBCPP_HAS_EXCEPTIONS defined before this header
 
 #endif  // WEBCPP_CONFIG_HPP
