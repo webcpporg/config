@@ -1,6 +1,9 @@
 # Working on config
 
-Read [webcpp's AGENTS.md](../../AGENTS.md)
+Read webcpp's [CODING-GUIDELINES.md](../../CODING-GUIDELINES.md)
+(<https://github.com/webcpporg/webcpp/blob/main/CODING-GUIDELINES.md>), whose
+chapter 15 gives config's design decisions with their reasons, and its
+[AGENTS.md](../../AGENTS.md)
 (<https://github.com/webcpporg/webcpp/blob/main/AGENTS.md>) first; this file
 holds only what is config's own.
 
@@ -11,7 +14,7 @@ holds only what is config's own.
   `<boost/version.hpp>`: headers-alone takes `config.hpp`, and the test
   `version` compiles `version.hpp` alone.
 - **The version is written once,** in `version.hpp`, and moves only by the
-  release procedure (AGENTS.md chapter 11), right after a tag.
+  release procedure (webcpp's AGENTS.md chapter 5), right after a tag.
 - **The target comes from the compiler,** never from b2, so a plain compiler
   gets it too; the target block comes before Boost.Config, which a
   WebAssembly target without a C++ library cannot compile.

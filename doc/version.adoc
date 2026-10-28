@@ -26,4 +26,4 @@ when the patch level is not 0, as `BOOST_LIB_VERSION` is Boost's: `"0_1"` is
 moves to the next version right after each release, by the release
 procedure of webcpp's
 https://github.com/webcpporg/webcpp/blob/main/AGENTS.md[AGENTS.md]
-(chapter 11), so that between two releases it names the one in preparation.
+(chapter 5), so that between two releases it names the one in preparation.
