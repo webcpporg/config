@@ -10,4 +10,8 @@ import webcpp ;
 
 webcpp.targets native wasip2 wasip3 emscripten ;
 
-webcpp.example config_quick_start.cpp ;
+# Each exception mode keeps the quick start's actual output. Select the
+# matching example without changing the exception mode the build requested.
+webcpp.example config_quick_start.cpp : <exception-handling>off:<build>no ;
+webcpp.example config_quick_start_no_exceptions.cpp
+  : <exception-handling>on:<build>no ;

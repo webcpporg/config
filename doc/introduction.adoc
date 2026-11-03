@@ -55,3 +55,10 @@ prints, natively, on wasm32-wasip2, on wasm32-wasip3 and with Emscripten:
 ----
 include::{examples}/config_quick_start.expected[]
 ----
+
+Built with `exception-handling=off`, the same program prints:
+
+[listing]
+----
+include::{examples}/config_quick_start_no_exceptions.expected[]
+----
